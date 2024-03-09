@@ -586,6 +586,18 @@ video {
   margin-right: 20px;
 }
 
+.mr-\[40px\] {
+  margin-right: 40px;
+}
+
+.mr-\[120px\] {
+  margin-right: 120px;
+}
+
+.mr-\[5000px\] {
+  margin-right: 5000px;
+}
+
 .flex {
   display: flex;
 }
