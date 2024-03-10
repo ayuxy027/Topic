@@ -656,8 +656,18 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-gradient-to-r {
-  background-image: linear-gradient(to right, var(--tw-gradient-stops));
+.bg-gradient-to-tr {
+  background-image: linear-gradient(to top right, var(--tw-gradient-stops));
+}
+
+.from-buttonColorHover {
+  --tw-gradient-from: #13547a var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(19 84 122 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.to-customGreen {
+  --tw-gradient-to: #80d0c7 var(--tw-gradient-to-position);
 }
 
 .p-\[10px\] {
@@ -730,9 +740,9 @@ video {
   text-transform: uppercase;
 }
 
-.text-blue-700 {
+.text-buttonColorHover {
   --tw-text-opacity: 1;
-  color: rgb(29 78 216 / var(--tw-text-opacity));
+  color: rgb(19 84 122 / var(--tw-text-opacity));
 }
 
 .text-white {
@@ -747,11 +757,6 @@ video {
 
 .hover\:cursor-pointer:hover {
   cursor: pointer;
-}
-
-.hover\:bg-sky-600:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(2 132 199 / var(--tw-bg-opacity));
 }
 
 .hover\:bg-buttonColorHover:hover {

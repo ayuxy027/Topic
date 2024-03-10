@@ -8,10 +8,14 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        // Blue color 
         customBlue: '#13547a',
+       //cyan light
         customGreen: '#80d0c7',
+        // cyan dark
         buttonColor: '#7fffd4',
-        buttonColorHover: '#13547a'
+        //Dark blue
+        buttonColorHover: '#13547a'        
       },
     },
   },
