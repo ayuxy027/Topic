@@ -59,14 +59,70 @@
             
         </div>
         <!-- Lower Section Empty Div  -->
-        <div id="lower-div" class="h-[33%] w-auto bg-customGreen ">
-            <div id="cards" class="  h-[500px]">
-                <div id="card1">
-                    <img src="https://templatemo.com/templates/templatemo_590_topic_listing/images/topics/undraw_Remote_design_team_re_urdx.png" alt="">
-
-                    
+        <div id="lower-div" class="h-[33%] w-auto bg-customGreen">
+            <!-- Left Card Div  -->
+            <div id="cards" class=" top-[-30%] h-[600px] relative">
+                <div id="card1" class="absolute ml-[15%] rounded-3xl overflow-hidden bg-white w-[25%] h-[66%] shadow-lg">
+                    <div class="absolute ml-[75%] mt-[10%]">
+                        <button id="card1-notification-button" type="button" class="bg-sky-500 hover:bg-buttonColorHover rounded-md w-[25px] h-[25px] text-white text-[13px] absolute ml-[30px]">
+                            14
+                          </button>
+                    </div>
+                    <div class="mt-[5%] ml-[5%] mr-[20%] pointer-events-none">
+                        <h1 class="font-bold text-xl text-black">Web Design</h1>
+                        <p class="text-gray-500">
+                            When you search for free CSS templates you will notice that TemplateMO is one of the best websites.
+                        </p>
+                    </div>
+                    <img class="w-full h-[300px] object-contain" src="https://templatemo.com/templates/templatemo_590_topic_listing/images/topics/undraw_Remote_design_team_re_urdx.png" alt="">
                 </div>
-                <div id="card2"></div>
+                <!-- Right Card Div  -->
+                <div id="card2" class="absolute ml-[41%] w-[44%] h-[66%] flex rounded-3xl shadow-lg overflow-hidden">
+                    <!-- Background Div -->
+                    <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('../assets/businesswoman-using-tablet-analysis.jpg');"></div>
+                    <!-- Transparency for Gradient Div -->
+                    <div class="absolute inset-0 opacity-80">
+                        <!-- Gradient Div -->
+                        <div class="absolute inset-0 bg-gradient-to-tr from-buttonColorHover to-customGreen gradient-15deg"></div>
+                    </div>
+                    <!-- Notification Button Div  -->
+                    <div id="card2-notification-button" class="absolute ml-[85%] mt-[5%]">
+                        <button type="button" class="bg-sky-600 hover:bg-buttonColorHover rounded-md w-[25px] h-[25px] text-white text-[13px] absolute ml-[30px]">
+                            25
+                          </button>
+                    </div>
+                    <!-- Top Part Div  -->
+                    <div class="absolute mt-[3%] ml-[5%] mr-[20%] overflow-hidden">
+                        <h1 class="font-bold text-white text-xl">Finance</h1>
+                        <p class="text-white">
+                            Topic Listing Template includes homepage, listing page, detail page, and contact page. You can feel free to edit and adapt your CMS requirements.
+                        </p>
+                        <button id="card2-learn-more-button" type="button" class="mt-5 bg-customGreen hover:bg-buttonColorHover rounded-full w-[135px] h-[40px] text-gray-200 text-lg">
+                            Learn More
+                        </button>
+                    </div>
+                    <!-- Bottom Part Div  -->
+                    <div class="flex absolute mt-[330px] mx-[5%]">
+                        <p class="text-white text-xl mt-[5px]">
+                            Share:
+                        </p>
+                        <button id="card2-twitter-button" type="button" class="bg-customGreen hover:bg-buttonColorHover rounded-full w-[40px] h-[40px] text-gray-200 text-[20px] mx-2">
+                            <i class="fab fa-twitter"></i>
+                        </button>
+                        <button id="card2-facebook-button" type="button" class="bg-customGreen hover:bg-buttonColorHover rounded-full w-[40px] h-[40px] text-gray-200 text-[20px] mx-2">
+                            <i class="fab fa-facebook"></i>
+                        </button>
+                        <button id="card2-pinterest-button" type="button" class="bg-customGreen hover:bg-buttonColorHover rounded-full w-[40px] h-[40px] text-gray-200 text-[20px] mx-2">
+                            <i class="fab fa-pinterest"></i>
+                        </button>
+                    </div>
+                    <!-- Right bound button -->
+                    <div class="absolute mt-[330px] mx-[5%] ml-[85%]">
+                        <button id="card2-save-button" type="button" class="bg-transparent hover:text-black rounded-full w-[40px] h-[40px] font-extrabold text-gray-200 text-[20px]">
+                            <i class="far fa-bookmark"></i>
+                        </button>
+                    </div>
+                </div>
             </div>
     </div>
 </body>
