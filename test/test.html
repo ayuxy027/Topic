@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Card Switcher</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Select a Category</h1>
+  <div id="card-container">
+    <button onclick="showDesignCards()">Design</button>
+    <button onclick="showMarketingCards()">Marketing</button>
+    <div id="card-holder">
+        <section id="design-cards" class="card-section">
+            <h2>Design Cards</h2>
+            <article class="card">
+              <img src="design-image1.jpg" alt="Design Image 1">
+              <p>This is a design card example.</p>
+            </article>
+          </section>          
+      <section id="marketing-cards" class="card-section">
+        <h2>Marketing Cards</h2>
+        <article class="card">
+          <img src="marketing-image1.jpg" alt="Marketing Image 1">
+          <p>This is a marketing card example.</p>
+        </article>
+        </section>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

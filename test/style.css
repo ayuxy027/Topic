@@ -1,0 +1,39 @@
+body {
+    font-family: sans-serif;
+  }
+  
+  #card-container {
+    text-align: center;
+    margin: 20px auto;
+  }
+  
+  button {
+    margin: 10px;
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .card-section {
+    display: none; /* Initially hide both sections */
+    padding: 20px;
+    border: 1px solid #ddd;
+    margin-top: 10px;
+  }
+  
+  .card {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .card img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+  }
+  
