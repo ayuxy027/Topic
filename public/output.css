@@ -834,6 +834,10 @@ video {
   gap: 47px;
 }
 
+.gap-\[65px\] {
+  gap: 65px;
+}
+
 .overflow-hidden {
   overflow: hidden;
 }
