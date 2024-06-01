@@ -43,7 +43,7 @@
             <hr class="bg-[teal] h-[3px] blur-sm">
             <!-- Centre Hero Text Including Search Bar  -->
             <div id="hero-txt" class="top-[18%] left-[25%] absolute">
-                <h1 class="text-[70px] text-center font-extrabold text-white">Discover. Learn. Enjoy</h1>
+                <h1 class="text-[60px] text-center font-extrabold text-white">Discover. Learn. Enjoy</h1>
                 
                 <p class="text-center text-buttonColorHover font-extrabold text-[20px] leading-7">platform for creatives around the world </p>
                 <!-- Div for the search bar  -->
@@ -131,59 +131,316 @@
     <!-- Page 2 Div  -->
     <div id="page2" class="h-[100vh] w-[100vw]">
         <div id="page2-head" class="h-[180px] w-full mt-[50px] text-center">
-            <h1 id="browse-topics" class="absolute ml-[550px] text-[45px] mt-[100px] tracking-wide text-bold font-black">Browse Topics</h1>
+          <h1
+            id="browse-topics"
+            class="absolute ml-[500px] text-[45px] mt-[100px] tracking-wide text-bold font-black"
+          >
+            Browse Topics
+          </h1>
         </div>
         <!-- Navbar of page 2 -->
         <div id="topic-nav" class="h-[60px]">
-            <nav class="absolute flex list-none left-[30%] text-2xl font-light gap-[47px] leading-10 text-slate-700">
-                <li onclick="showDesignCards()" class="hover:cursor-pointer hover:underline hover:underline-offset-[15px] transition duration-50 hover:ease-in hover:delay-150 hover:text-[#13547a]">Design</li>
-                <li class="hover:cursor-pointer hover:underline hover:underline-offset-[15px] transition duration-50 hover:ease-in hover:delay-150 hover:text-[#13547a]">Marketing</li>
-                <li class="hover:cursor-pointer hover:underline hover:underline-offset-[15px] transition duration-50 hover:ease-in hover:delay-150 hover:text-[#13547a]">Finance</li>
-                <li class="hover:cursor-pointer hover:underline hover:underline-offset-[15px] transition duration-50 hover:ease-in hover:delay-150 hover:text-[#13547a]">Music</li>
-                <li class="hover:cursor-pointer hover:underline hover:underline-offset-[15px] transition duration-50 hover:ease-in hover:delay-150 hover:text-[#13547a]">Education</li>
-            </nav>
+          <nav
+            class="absolute flex list-none left-[30%] text-2xl font-light gap-[47px] leading-10 text-slate-700"
+          >
+            <li
+              onclick="showCards('design-cards')"
+              class="hover:cursor-pointer hover:underline hover:underline-offset-[15px] transition duration-50 hover:ease-in hover:delay-150 hover:text-[#13547a]"
+            >
+              Design
+            </li>
+            <li
+              onclick="showCards('marketing-cards')"
+              class="hover:cursor-pointer hover:underline hover:underline-offset-[15px] transition duration-50 hover:ease-in hover:delay-150 hover:text-[#13547a]"
+            >
+              Marketing
+            </li>
+            <li
+              onclick="showCards('finance-cards')"
+              class="hover:cursor-pointer hover:underline hover:underline-offset-[15px] transition duration-50 hover:ease-in hover:delay-150 hover:text-[#13547a]"
+            >
+              Finance
+            </li>
+            <li
+              onclick="showCards('music-cards')"
+              class="hover:cursor-pointer hover:underline hover:underline-offset-[15px] transition duration-50 hover:ease-in hover:delay-150 hover:text-[#13547a]"
+            >
+              Music
+            </li>
+            <li
+              onclick="showCards('education-cards')"
+              class="hover:cursor-pointer hover:underline hover:underline-offset-[15px] transition duration-50 hover:ease-in hover:delay-150 hover:text-[#13547a]"
+            >
+              Education
+            </li>
+          </nav>
         </div>
-        <hr class="bg-slate-400 h-[2px] blur-sm">
-        
+        <hr class="bg-slate-400 h-[2px] blur-sm" />
+  
         <!-- Cards below the Navbar of page 2 -->
-        <div id="page2-cards" class="w-full h-screen">
-            <!-- Cards here -->
-            
-            <!-- Design Section Cards -->
-            
-            <!-- Design Card 1 -->
-            <div id="design-cards">
-                <div id="card1-design" class="absolute ml-[10%] rounded-3xl bg-white w-[25%] h-[400px] shadow-2xl mt-[50px] transition duration-[0.2s] ease-in delay-[0.1s] hover:scale-[1.1] hover:cursor-pointer">
-                   <div class="mt-[5%] ml-[5%] mr-[20%] pointer-events-none">
-                    <h1 class="text-xl font-bold text-black">Web Design</h1>
+        <di id="page2-cards" class="w-full h-screen">
+          <!-- Design Section Cards -->
+          <div id="design-cards" class="cards" style="display: block">
+            <div
+              id="card1-design"
+              class="absolute ml-[10%] rounded-3xl bg-white w-[25%] h-[350px] shadow-2xl mt-[50px] transition duration-[0.2s] ease-in delay-[0.1s] hover:scale-[1.1] hover:cursor-pointer"
+            >
+              <div class="mt-[5%] ml-[5%] mr-[20%] pointer-events-none">
+                <h1 class="text-xl font-bold text-black">Web Design</h1>
+                <p class="mt-2 leading-7 text-gray-500">
+                  Lorem ipsum dolor sit amet consectetur.
+                </p>
+              </div>
+              <img
+                class="w-full h-[200px] object-contain mt-10"
+                src="../assets/undraw_Remote_design_team_re_urdx.png"
+                alt=""
+              />
+            </div>
+            <div
+              id="card2-design"
+              class="absolute ml-[40%] rounded-3xl bg-white w-[25%] h-[350px] shadow-2xl mt-[50px] transition duration-[0.2s] ease-in delay-[0.1s] hover:scale-[1.1] hover:cursor-pointer"
+            >
+              <div class="mt-[5%] ml-[5%] mr-[20%] pointer-events-none">
+                <h1 class="text-xl font-bold text-black">Graphic</h1>
+                <p class="absolute mt-2 leading-7 text-gray-500">
+                  Lorem ipsum dolor sit amet consectetur.
+                </p>
+              </div>
+              <img
+                class="w-full h-[200px] object-contain absolute mt-[90px]"
+                src="../assets/undraw_Redesign_feedback_re_jvm0.png"
+                alt=""
+              />
+            </div>
+            <div
+              id="card3-design"
+              class="absolute ml-[70%] rounded-3xl bg-white w-[25%] h-[350px] shadow-2xl mt-[50px] transition duration-[0.2s] ease-in delay-[0.1s] hover:scale-[1.1] hover:cursor-pointer"
+            >
+              <div class="mt-[5%] ml-[5%] mr-[20%] pointer-events-none">
+                <h1 class="text-xl font-bold text-black">Logo Design</h1>
+                <p class="mt-2 leading-7 text-gray-500">
+                  Lorem ipsum dolor sit amet consectetur.
+                </p>
+              </div>
+              <img
+                class="w-full h-[200px] object-contain absolute mt-10"
+                src="../assets/colleagues-working-cozy-office-medium-shot.png"
+              />
+            </div>
+          </div>
+          <!-- Marketing Section Cards -->
+          <div id="marketing-cards" class="cards" style="display: none">
+            <div
+              id="card1-marketing"
+              class="absolute ml-[10%] rounded-3xl bg-white w-[25%] h-[350px] shadow-2xl mt-[50px] transition duration-[0.2s] ease-in delay-[0.1s] hover:scale-[1.1] hover:cursor-pointer"
+              class="absolute ml-[10%] rounded-3xl bg-white w-[25%] h-[350px] shadow-2xl mt-[50px] transition duration-[0.2s] ease-in delay-[0.1s] hover:scale-[1.1] hover:cursor-pointer"
+            >
+              <div class="mt-[5%] ml-[5%] mr-[20%] pointer-events-none">
+                <h1 class="text-xl font-bold text-black">Advertising</h1>
+                <p class="mt-2 leading-7 text-gray-500">
+                  Lorem ipsum dolor sit amet consectetur.
+                </p>
+              </div>
+              <img
+                class="w-full h-[200px] object-contain mt-10"
+                src="../assets/undraw_online_ad_re_ol62.png"
+                alt=""
+              />
+            </div>
+            <div
+              id="card2-marketing"
+              class="absolute ml-[40%] rounded-3xl bg-white w-[25%] h-[350px] shadow-2xl mt-[50px] transition duration-[0.2s] ease-in delay-[0.1s] hover:scale-[1.1] hover:cursor-pointer"
+              class="absolute ml-[40%] rounded-3xl bg-white w-[25%] h-[350px] shadow-2xl mt-[50px] transition duration-[0.2s] ease-in delay-[0.1s] hover:scale-[1.1] hover:cursor-pointer"
+            >
+              <div class="mt-[5%] ml-[5%] mr-[20%] pointer-events-none">
+                <h1 class="text-xl font-bold text-black">Video Content</h1>
+                <p class="absolute mt-2 leading-7 text-gray-500">
+                  Lorem ipsum dolor sit amet consectetur.
+                </p>
+              </div>
+              <img
+                class="w-full h-[200px] object-contain absolute mt-[90px]"
+                src="../assets/undraw_Group_video_re_btu7.png"
+                alt=""
+              />
+            </div>
+            <div
+              id="card3-marketing"
+              class="absolute ml-[70%] rounded-3xl bg-white w-[25%] h-[350px] shadow-2xl mt-[50px] transition duration-[0.2s] ease-in delay-[0.1s] hover:scale-[1.1] hover:cursor-pointer"
+              class="absolute ml-[70%] rounded-3xl bg-white w-[25%] h-[350px] shadow-2xl mt-[50px] transition duration-[0.2s] ease-in delay-[0.1s] hover:scale-[1.1] hover:cursor-pointer"
+            >
+              <div class="mt-[5%] ml-[5%] mr-[20%] pointer-events-none">
+                <h1 class="text-xl font-bold text-black">Viral Tweet</h1>
+                <p class="mt-2 leading-7 text-gray-500">
+                  Lorem ipsum dolor sit amet consectetur.
+                </p>
+              </div>
+              <img
+                class="w-full h-[200px] object-contain absolute mt-10"
+                src="../assets/undraw_viral_tweet_gndb.png"
+              />
+            </div>
+          </div>
+          <!-- Finance Cards here  -->
+          <div id="finance-cards" class="cards" style="display: none">
+            <!-- Add Finance cards here -->
+            <div id="finance-cards" class="cards" style="display: none">
+              <div
+                id="card1-finance"
+                class="absolute ml-[10%] rounded-3xl bg-white w-[500px] h-[300px] shadow-2xl mt-[50px] transition duration-[0.2s] ease-in delay-[0.1s] hover:scale-[1.1] hover:cursor-pointer"
+              >
+                <div class="mt-[5%] ml-[5%] mr-[20%] pointer-events-none">
+                  <h1 class="text-xl font-bold text-black">Investment</h1>
+                  <p class="mt-2 leading-7 text-gray-500">
+                    Lorem ipsum dolor sit amet .
+                  </p>
+                </div>
+                <img
+                  class="w-full h-[150px] object-contain mt-8 absolute"
+                  src="../assets/undraw_Finance_re_gnv2.png"
+                  alt=""
+                />
+              </div>
+              <div
+                id="card2-finance"
+                class="absolute ml-[55%] rounded-3xl bg-gradient-to-tr from-[#355f7a] to-[#65afa6] gradient-15deg w-[500px] h-[300px] shadow-2xl mt-[50px] transition duration-[0.2s] ease-in delay-[0.1s] hover:scale-[1.1] hover:cursor-pointer hover:shadow-[0_0_10px_#fff]"
+              >
+                <div class="mt-[5%] ml-[5%] mr-[20%] pointer-events-none">
+                  <h1 class="text-xl font-bold text-white">Investment</h1>
+                  <p class="mt-2 leading-7 text-white">
+                    Lorem ipsum dolor sit amet .
+                  </p>
+                </div>
+                <!-- learn more button  -->
+                <button
+                  id="card2-learn-more-button"
+                  type="button"
+                  class="mt-[50px] ml-[20px] bg-[#65afa6] hover:bg-buttonColorHover rounded-full w-[135px] h-[40px] text-gray-200 text-lg transition duration-50 hover:ease-in hover:delay-150 font-semibold"
+                >
+                  Learn More
+                </button>
+                <!-- Social Media links  -->
+                <div class="flex absolute mt-[40px] mx-[5%]">
+                  <p class="text-white text-lg mt-[5px] font-medium">Share:</p>
+                  <button
+                    id="card2-twitter-button"
+                    type="button"
+                    class="bg-[#65afa6] hover:bg-buttonColorHover rounded-full w-[40px] h-[40px] text-gray-200 text-[20px] mx-2 transition duration-50 hover:ease-in hover:delay-150"
+                  >
+                    <i class="fab fa-twitter"></i>
+                  </button>
+                  <button
+                    id="card2-facebook-button"
+                    type="button"
+                    class="bg-[#65afa6] hover:bg-buttonColorHover rounded-full w-[40px] h-[40px] text-gray-200 text-[20px] mx-2 transition duration-50 hover:ease-in hover:delay-150"
+                  >
+                    <i class="fab fa-facebook"></i>
+                  </button>
+                  <button
+                    id="card2-pinterest-button"
+                    type="button"
+                    class="bg-[#65afa6] hover:bg-buttonColorHover rounded-full w-[40px] h-[40px] text-gray-200 text-[20px] mx-2 transition duration-50 hover:ease-in hover:delay-150"
+                  >
+                    <i class="fab fa-pinterest"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Music Cards here  -->
+          <div id="music-cards" class="cards" style="display: none">
+            <!-- Add Music cards here -->
+              <div
+                id="card1-music"
+                class="absolute ml-[10%] rounded-3xl bg-white w-[25%] h-[350px] shadow-2xl mt-[50px] transition duration-[0.2s] ease-in delay-[0.1s] hover:scale-[1.1] hover:cursor-pointer"
+              >
+                <div class="mt-[5%] ml-[5%] mr-[20%] pointer-events-none">
+                  <h1 class="text-xl font-bold text-black">Composing Song</h1>
+                  <p class="mt-2 leading-7 text-gray-500">
+                    Lorem ipsum dolor sit amet consectetur.
+                  </p>
+                </div>
+                <img
+                  class="w-full h-[200px] object-contain mt-10"
+                  src="../assets/undraw_Compose_music_re_wpiw.png"
+                  alt=""
+                />
+              </div>
+              <div
+                id="card2-music"
+                class="absolute ml-[40%] rounded-3xl bg-white w-[25%] h-[350px] shadow-2xl mt-[50px] transition duration-[0.2s] ease-in delay-[0.1s] hover:scale-[1.1] hover:cursor-pointer"
+              >
+                <div class="mt-[5%] ml-[5%] mr-[20%] pointer-events-none">
+                  <h1 class="text-xl font-bold text-black">Online Music
+                  </h1>
+                  <p class="absolute mt-2 leading-7 text-gray-500">
+                    Lorem ipsum dolor sit amet consectetur.
+                  </p>
+                </div>
+                <img
+                  class="w-full h-[200px] object-contain absolute mt-[90px]"
+                  src="../assets/undraw_happy_music_g6wc.png"
+                  alt=""
+                />
+              </div>
+              <div
+                id="card3-music"
+                class="absolute ml-[70%] rounded-3xl bg-white w-[25%] h-[350px] shadow-2xl mt-[50px] transition duration-[0.2s] ease-in delay-[0.1s] hover:scale-[1.1] hover:cursor-pointer"
+              >
+                <div class="mt-[5%] ml-[5%] mr-[20%] pointer-events-none">
+                  <h1 class="text-xl font-bold text-black">Podcast</h1>
+                  <p class="mt-2 leading-7 text-gray-500">
+                    Lorem ipsum dolor sit amet consectetur.
+                  </p>
+                </div>
+                <img
+                  class="w-full h-[200px] object-contain absolute mt-10"
+                  src="../assets/undraw_Podcast_audience_re_4i5q.png"
+                />
+              </div>
+            </div>
+          </di
+          <div id="education-cards" class="cards" style="display: none">
+            <!-- Add Education cards here -->
+              <div id="education-cards" class="cards" style="display: none">
+                <div
+                  id="card1-education"
+                  class="absolute ml-[10%] rounded-3xl bg-white w-[500px] h-[300px] shadow-2xl mt-[50px] transition duration-[0.2s] ease-in delay-[0.1s] hover:scale-[1.1] hover:cursor-pointer"
+                >
+                  <div class="mt-[5%] ml-[5%] mr-[20%] pointer-events-none">
+                    <h1 class="text-xl font-bold text-black">Graduation</h1>
                     <p class="mt-2 leading-7 text-gray-500">
-                        Lorem ipsum dolor sit amet consectetur.
+                      Lorem ipsum dolor sit amet .
                     </p>
                   </div>
-                <img class="w-full h-[200px] object-contain mt-10" src="../assets/undraw_Remote_design_team_re_urdx.png" alt="">
-            </div>
-            <!--Design Card 2 -->
-            <div id="card2-design" class="absolute ml-[40%] rounded-3xl bg-white w-[25%] h-[400px] shadow-2xl mt-[50px] transition duration-[0.2s] ease-in delay-[0.1s] hover:scale-[1.1] hover:cursor-pointer">
-                <div class="mt-[5%] ml-[5%] mr-[20%] pointer-events-none">
-                    <h1 class="text-xl font-bold text-black">Graphic</h1>
-                    <p class="absolute mt-2 leading-7 text-gray-500">
-                        Lorem ipsum dolor sit amet consectetur.
-                    </p>
+                  <img
+                    class="w-full h-[150px] object-contain mt-8 absolute"
+                    src="../assets/undraw_Graduation_re_gthn.png"
+                    alt=""
+                  />
                 </div>
-                <img class="w-full h-[200px] object-contain absolute mt-[90px]" src="../assets/undraw_Redesign_feedback_re_jvm0.png" alt="">
-            </div>
-            <!--Design Card 3 -->
-            <div id="card3-design" class="absolute ml-[70%] rounded-3xl bg-white w-[25%] h-[400px] shadow-2xl mt-[50px] transition duration-[0.2s] ease-in delay-[0.1s] hover:scale-[1.1] hover:cursor-pointer">
-                <div class="mt-[5%] ml-[5%] mr-[20%] pointer-events-none">
-                    <h1 class="text-xl font-bold text-black">Logo Design</h1>
+                <div
+                  id="card2-education"
+                  class="absolute ml-[700px] rounded-3xl bg-white w-[500px] h-[300px] shadow-2xl mt-[50px] transition duration-[0.2s] ease-in delay-[0.1s] hover:scale-[1.1] hover:cursor-pointer"
+                >
+                  <div class="mt-[5%] ml-[5%] mr-[20%] pointer-events-none">
+                    <h1 class="text-xl font-bold text-black">Educator</h1>
                     <p class="mt-2 leading-7 text-gray-500">
-                        Lorem ipsum dolor sit amet consectetur.
+                      Lorem ipsum dolor sit amet .
                     </p>
+                  </div>
+                  <img
+                    class="w-full h-[150px] object-contain mt-8 absolute"
+                    src="../assets/undraw_Educator_re_ju47.png"
+                    alt=""
+                  />
                 </div>
-                <img class="w-full h-[200px] object-contain absolute mt-10" src="../assets/colleagues-working-cozy-office-medium-shot.png" alt="">
+              </div>
             </div>
+          </div>
         </div>
-    </div>
-</div>
+      </div>
+      <script src="cards.js"></script>
 </body>
 </html>
