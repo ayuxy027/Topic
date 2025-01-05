@@ -1,6 +1,7 @@
-import type { Config } from "tailwindcss";
+// Config FileSystem, do not change
 
-export default {
+/** @type {import('tailwindcss').Config} */
+module.exports = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -9,10 +10,20 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        // Blue color
+        customBlue: "#13547a",
+        // Cyan light
+        customGreen: "#80d0c7",
+        // Cyan dark
+        buttonColor: "#7fffd4",
+        // Dark blue
+        buttonColorHover: "#13547a",
+      },
+      fontFamily: {
+        body: ["Montserrat", "sans-serif"],
       },
     },
   },
+  variants: {},
   plugins: [],
-} satisfies Config;
+};
