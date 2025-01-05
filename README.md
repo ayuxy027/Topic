@@ -121,5 +121,4 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ---
 
-Built with ❤️ by the Topic_ Team
-```
+Built with ❤️ by the Topic Team
